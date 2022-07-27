@@ -1,6 +1,6 @@
 {
     "configVersion": 2,
-    "appIdentifier": "com.nativemobiledemo.mobile",
+    "appIdentifier": "myapp.nativemobiledemo",
     "appName": "Native Mobile Demo",
     "bundleName": {
         "main": "NativeMobileDem",
@@ -12,9 +12,54 @@
     },
     "orientation": {
         "portrait": true,
-        "landscape": true
+        "landscape": false
     },
     "permissions": [
+        {
+            "title": "Camera",
+            "name": "android.permission.CAMERA",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Fine Location",
+            "name": "android.permission.ACCESS_FINE_LOCATION",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Coarse Location",
+            "name": "android.permission.ACCESS_COARSE_LOCATION",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Background Location",
+            "name": "android.permission.ACCESS_BACKGROUND_LOCATION",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Location - When In Use Usage",
+            "name": "NSLocationWhenInUseUsageDescription",
+            "purpose": "To use that feature, the app needs access to your location.",
+            "platform": "ios",
+            "required": true
+        },
+        {
+            "title": "Location - Always And When in Use Usage",
+            "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
+            "purpose": "To use that feature, the app needs access to your location.",
+            "platform": "ios",
+            "required": true
+        },
+        {
+            "title": "Camera Usage",
+            "name": "NSCameraUsageDescription",
+            "purpose": "The camera can be used to open apps by scanning a QR code.",
+            "platform": "ios",
+            "required": false
+        },
         {
             "title": "Internet",
             "name": "android.permission.INTERNET",
@@ -45,45 +90,27 @@
             "purpose": "To use that feature, the app needs access to your location.",
             "platform": "ios",
             "required": true
-        },
-        {
-            "title": "Location - When In Use Usage",
-            "name": "NSLocationWhenInUseUsageDescription",
-            "purpose": "To use that feature, the app needs access to your location.",
-            "platform": "ios",
-            "required": true
-        },
-        {
-            "title": "Location - Always And When in Use Usage",
-            "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
-            "purpose": "To use that feature, the app needs access to your location.",
-            "platform": "ios",
-            "required": true
-        },
-        {
-            "title": "Fine Location",
-            "name": "android.permission.ACCESS_FINE_LOCATION",
-            "platform": "android",
-            "required": false
-        },
-        {
-            "title": "Coarse Location",
-            "name": "android.permission.ACCESS_COARSE_LOCATION",
-            "platform": "android",
-            "required": false
         }
     ],
     "capabilities": {
         "deepLink": {
             "value": "",
-            "enabled": false
+            "enabled": false,
+            "android": {
+                "webLinks": [
+                    {
+                        "host": "",
+                        "path": ""
+                    }
+                ]
+            }
         },
         "maps": {
             "value": "AIzaSyDoFxLTJQb7gE9zoS4eWifhOEyg90tOVQE",
             "enabled": true
         },
         "mapsIos": {
-            "enabled": true
+            "enabled": false
         },
         "pushNotifications": {
             "enabled": false
@@ -107,7 +134,7 @@
             "enabled": true
         }
     },
-    "appVersion": "1.0.0",
+    "appVersion": "0.0.1",
     "buildNumber": 1,
-    "runtimeUrl": "https://nativemobiledemo112-sandbox.mxapps.io/"
+    "runtimeUrl": "https://azuressooidcdemo-sandbox.mxapps.io/"
 }
