@@ -134,7 +134,7 @@
             "enabled": true
         }
     },
-    "appVersion": "0.0.1",
-    "buildNumber": 1,
-    "runtimeUrl": "https://azuressooidcdemo-sandbox.mxapps.io/"
+    "appVersion": "0.0.2",
+    "buildNumber": 2,
+    "runtimeUrl": "https://nativemobiledemo112-sandbox.mxapps.io/"
 }
